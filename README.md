@@ -1,9 +1,9 @@
-# Getexceptional API Wrapper
+# Exceptional API Wrapper
 
 ## Intro
 
-A wrapper on the [Getexceptional](www.getexceptional.com) API for iOS. This wrapper uses the
-device's internet connection to report errors to our getexcetional account.
+A wrapper on the [Exceptional](http://getexceptional.com) API for iOS. This wrapper uses the
+device's internet connection to report errors to your Exceptional account.
 
 ## Quickstart
 
@@ -15,12 +15,12 @@ In your Xcode project:
 
 - drag the GetexceptionalAPI folder into your project
 - drag the external folder into your project (decide which dependencies you need)
-- open the exceptional.plist file and add your API_KEY (this can be retrieved from the getexceptional.com website)
+- open the exceptional.plist file and add your API_KEY (this can be retrieved from the exceptional website)
 
 ## External Dependencies
 
-- ASIHTTPRequest http://allseeing-i.com/ASIHTTPRequest/
-- JSON framework https://github.com/stig/json-framework
+- [ASIHTTPRequest](http://allseeing-i.com/ASIHTTPRequest)
+- [JSON framework](https://github.com/stig/json-framework)
 
 ## Using the Wrapper in your code
 
