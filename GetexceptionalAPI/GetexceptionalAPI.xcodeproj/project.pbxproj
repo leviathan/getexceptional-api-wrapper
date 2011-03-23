@@ -150,7 +150,6 @@
 		1F1EC0F41339FA65007B5A96 = {
 			isa = PBXGroup;
 			children = (
-				1F1EC17B1339FCF7007B5A96 /* CFNetwork.framework */,
 				1F1EC1091339FA65007B5A96 /* GetexceptionalAPI */,
 				1F1EC1231339FA65007B5A96 /* GetexceptionalAPITests */,
 				1F1EC1021339FA65007B5A96 /* Frameworks */,
@@ -170,6 +169,7 @@
 		1F1EC1021339FA65007B5A96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F1EC17B1339FCF7007B5A96 /* CFNetwork.framework */,
 				1F1EC17A1339FCA3007B5A96 /* CoreGraphics.framework */,
 				1F1EC1781339FC9B007B5A96 /* MobileCoreServices.framework */,
 				1F1EC1761339FC95007B5A96 /* SystemConfiguration.framework */,

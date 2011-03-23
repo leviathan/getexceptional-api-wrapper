@@ -27,14 +27,24 @@
  */
 
 #import "GetexceptionalAPIAppDelegate.h"
+#import "GTExceptionalAPI.h"
 
 @implementation GetexceptionalAPIAppDelegate
 
-
 @synthesize window=_window;
+@synthesize reportDirectlyButton, triggerExceptionButton;
+
+- (void)dealloc {
+    [reportDirectlyButton release];
+    [triggerExceptionButton release];
+    [_window release];
+    [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[GTExceptionalAPI sharedAPI] setupExceptionHandling];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;
@@ -79,10 +89,24 @@
      */
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
+#pragma Button delegates
+
+-(IBAction) reportDirectlyButtonPressed:(id)sender {
+    @try {
+        NSArray *array = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
+        [array objectAtIndex:0];
+        [array objectAtIndex:5];
+    }
+    @catch (NSException *exception) {
+        [[GTExceptionalAPI sharedAPI] reportNSException:exception wait:NO];
+    }
+}
+
+-(IBAction) triggerExceptionButtonPressed:(id)sender {
+    NSArray *array = [NSArray arrayWithObjects:@"one", @"two", @"three", nil];
+    [array objectAtIndex:0];
+    [array objectAtIndex:7];
+
 }
 
 @end

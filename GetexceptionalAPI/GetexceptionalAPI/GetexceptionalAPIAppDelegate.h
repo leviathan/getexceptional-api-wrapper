@@ -29,9 +29,16 @@
 #import <UIKit/UIKit.h>
 
 @interface GetexceptionalAPIAppDelegate : NSObject <UIApplicationDelegate> {
-
+    IBOutlet UIButton *reportDirectlyButton;
+    IBOutlet UIButton *triggerExceptionButton;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIButton *reportDirectlyButton;
+@property (nonatomic, retain) IBOutlet UIButton *triggerExceptionButton;
+
+-(IBAction) reportDirectlyButtonPressed:(id)sender;
+
+-(IBAction) triggerExceptionButtonPressed:(id)sender;
 
 @end
