@@ -39,7 +39,6 @@
 		1F1EC1771339FC95007B5A96 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1761339FC95007B5A96 /* SystemConfiguration.framework */; };
 		1F1EC1791339FC9B007B5A96 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1781339FC9B007B5A96 /* MobileCoreServices.framework */; };
 		1F1EC17C1339FCF7007B5A96 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC17B1339FCF7007B5A96 /* CFNetwork.framework */; };
-		1F1EC17E1339FD7B007B5A96 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F1EC17D1339FD75007B5A96 /* README.md */; };
 		1F972305133A05490009D818 /* exceptional.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F972300133A05490009D818 /* exceptional.plist */; };
 		1F972306133A05490009D818 /* GTExceptionalAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F972302133A05490009D818 /* GTExceptionalAPI.m */; };
 		1F972307133A05490009D818 /* GTExceptionalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F972304133A05490009D818 /* GTExceptionalMessage.m */; };
@@ -113,7 +112,6 @@
 		1F1EC1781339FC9B007B5A96 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1F1EC17A1339FCA3007B5A96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1F1EC17B1339FCF7007B5A96 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		1F1EC17D1339FD75007B5A96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F972300133A05490009D818 /* exceptional.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = exceptional.plist; sourceTree = "<group>"; };
 		1F972301133A05490009D818 /* GTExceptionalAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTExceptionalAPI.h; sourceTree = "<group>"; };
 		1F972302133A05490009D818 /* GTExceptionalAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTExceptionalAPI.m; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 				1F1EC1121339FA65007B5A96 /* GetexceptionalAPIAppDelegate.h */,
 				1F1EC1131339FA65007B5A96 /* GetexceptionalAPIAppDelegate.m */,
 				1F1EC1151339FA65007B5A96 /* MainWindow.xib */,
-				1F1EC17D1339FD75007B5A96 /* README.md */,
 				1F1EC10A1339FA65007B5A96 /* Supporting Files */,
 			);
 			path = GetexceptionalAPI;
@@ -367,7 +364,6 @@
 			files = (
 				1F1EC10E1339FA65007B5A96 /* InfoPlist.strings in Resources */,
 				1F1EC1171339FA65007B5A96 /* MainWindow.xib in Resources */,
-				1F1EC17E1339FD7B007B5A96 /* README.md in Resources */,
 				1F972305133A05490009D818 /* exceptional.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
