@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	1F1EC0F61339FA65007B5A96 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 1FB02F6A133A04A5008C0462 /* GetexceptionalAPI */;
+		activeTarget = 1F1EC0FE1339FA65007B5A96 /* GetexceptionalAPI */;
+		codeSenseManager = 1FB02F8C133A04AB008C0462 /* Code sense */;
+		executables = (
+			1FB02F6A133A04A5008C0462 /* GetexceptionalAPI */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					757,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 322569381;
+			PBXWorkspaceStateSaveDate = 322569381;
+		};
+		sourceControlManager = 1FB02F8B133A04AB008C0462 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	1F1EC0FE1339FA65007B5A96 /* GetexceptionalAPI */ = {
+		activeExec = 0;
+		executables = (
+			1FB02F6A133A04A5008C0462 /* GetexceptionalAPI */,
+		);
+	};
+	1F1EC11C1339FA65007B5A96 /* GetexceptionalAPITests */ = {
+		activeExec = 0;
+	};
+	1FB02F6A133A04A5008C0462 /* GetexceptionalAPI */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = GetexceptionalAPI;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	1FB02F8B133A04AB008C0462 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	1FB02F8C133A04AB008C0462 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
