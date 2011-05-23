@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F100F06138AB0F500E9BD57 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F100F05138AB0F500E9BD57 /* UIDeviceHardware.m */; };
 		1F1EC1041339FA65007B5A96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1031339FA65007B5A96 /* UIKit.framework */; };
 		1F1EC1061339FA65007B5A96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1051339FA65007B5A96 /* Foundation.framework */; };
 		1F1EC1081339FA65007B5A96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1071339FA65007B5A96 /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F100F04138AB0F500E9BD57 /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
+		1F100F05138AB0F500E9BD57 /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
 		1F1EC0FF1339FA65007B5A96 /* GetexceptionalAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetexceptionalAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1EC1031339FA65007B5A96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F1EC1051339FA65007B5A96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -234,6 +237,8 @@
 				1F1EC1621339FB67007B5A96 /* NSDate+StringParsing.m */,
 				1F1EC1711339FBA0007B5A96 /* Reachability.h */,
 				1F1EC1721339FBA0007B5A96 /* Reachability.m */,
+				1F100F04138AB0F500E9BD57 /* UIDeviceHardware.h */,
+				1F100F05138AB0F500E9BD57 /* UIDeviceHardware.m */,
 			);
 			path = external;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 				1F1EC1731339FBA0007B5A96 /* Reachability.m in Sources */,
 				1F972306133A05490009D818 /* GTExceptionalAPI.m in Sources */,
 				1F972307133A05490009D818 /* GTExceptionalMessage.m in Sources */,
+				1F100F06138AB0F500E9BD57 /* UIDeviceHardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
