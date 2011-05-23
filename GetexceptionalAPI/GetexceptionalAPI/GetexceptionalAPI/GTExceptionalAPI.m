@@ -56,7 +56,8 @@ static NSString *GTCRASH_CACHE_DIR = @"com.mobilemelting.exceptional.data";
 
 static GTExceptionalAPI *sharedSingleton = nil;
 
-@synthesize applicationIdentifier, applicationVersion, deviceName, crashReportDirectory;
+@synthesize applicationIdentifier, applicationVersion, deviceName, systemVersion,
+crashReportDirectory;
 
 /**
  * Return the application's crash reporter instance.
@@ -95,7 +96,8 @@ void exceptionHandler(NSException *exception) {
     NSDictionary *envDict = [NSDictionary dictionaryWithObjectsAndKeys:
                              self.applicationIdentifier, @"application_identifier",
                              self.applicationVersion, @"application_version",
-                             self.deviceName, @"device_name", nil];
+                             self.deviceName, @"device_name",
+                             self.systemVersion, @"device_version", nil];
     
     // "application_environment"
     NSDictionary *appDict = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -206,6 +208,7 @@ void exceptionHandler(NSException *exception) {
     self.applicationIdentifier = identifier;
     self.applicationVersion = version;
     self.deviceName = [GTExceptionalDeviceInfo platformString];
+    self.systemVersion = [[UIDevice currentDevice] systemVersion];
     
     /* No occurances of '/' should ever be in a bundle ID, but just to be safe, we escape them */
     NSString *appIdPath = [applicationIdentifier stringByReplacingOccurrencesOfString:@"/" withString:@"_"];

@@ -39,6 +39,8 @@
     NSString *applicationVersion;
     // The device name on which the error occurred, e.g. "iPhone 4"
     NSString *deviceName;
+    // The device's iOS version identifier, e.g. "4.3.3"
+    NSString *systemVersion;
     // Path to the crash reporter internal data directory
     NSString *crashReportDirectory;
 }
@@ -46,6 +48,7 @@
 @property (nonatomic, retain) NSString *applicationIdentifier;
 @property (nonatomic, retain) NSString *applicationVersion;
 @property (nonatomic, retain) NSString *deviceName;
+@property (nonatomic, retain) NSString *systemVersion;
 @property (nonatomic, retain) NSString *crashReportDirectory;
 
 /**
