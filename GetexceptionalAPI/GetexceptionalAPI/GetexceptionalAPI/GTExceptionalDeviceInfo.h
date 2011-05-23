@@ -1,5 +1,5 @@
 //
-//  UIDeviceHardware.h
+//  GTExceptionalDeviceInfo.h
 //  GetexceptionalAPI
 //
 //  Created by Jörg Polakowski on 23/05/11.
@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UIDeviceHardware : NSObject 
+@interface GTExceptionalDeviceInfo : NSObject 
 
 + (NSString *) platform;
 + (NSString *) platformString;

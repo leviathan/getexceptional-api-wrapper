@@ -29,7 +29,7 @@
 #import "GTExceptionalAPI.h"
 #import "ASIHTTPRequest.h"
 #import "JSON.h"
-#import "UIDeviceHardware.h"
+#import "GTExceptionalDeviceInfo.h"
 
 #define NSDEBUG(msg, args...) {\
     NSLog(@"[ExceptionalAPI] " msg, ## args); \
@@ -205,7 +205,7 @@ void exceptionHandler(NSException *exception) {
     // Save application ID, version and device name
     self.applicationIdentifier = identifier;
     self.applicationVersion = version;
-    self.deviceName = [UIDeviceHardware platformString];
+    self.deviceName = [GTExceptionalDeviceInfo platformString];
     
     /* No occurances of '/' should ever be in a bundle ID, but just to be safe, we escape them */
     NSString *appIdPath = [applicationIdentifier stringByReplacingOccurrencesOfString:@"/" withString:@"_"];

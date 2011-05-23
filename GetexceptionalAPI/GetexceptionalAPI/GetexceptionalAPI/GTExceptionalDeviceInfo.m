@@ -1,5 +1,5 @@
 //
-//  UIDeviceHardware.m
+//  GTExceptionalDeviceInfo.m
 //  GetexceptionalAPI
 //
 //  Created by Jörg Polakowski on 23/05/11.
@@ -9,11 +9,11 @@
 //  Taken from: http://stackoverflow.com/questions/448162/determine-device-iphone-ipod-touch-with-iphone-sdk/1561920#1561920
 //
 
-#import "UIDeviceHardware.h"
+#import "GTExceptionalDeviceInfo.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
-@implementation UIDeviceHardware
+@implementation GTExceptionalDeviceInfo
 
 + (NSString *) platform{
     size_t size;
