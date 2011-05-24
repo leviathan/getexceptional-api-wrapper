@@ -45,6 +45,11 @@ Doing this is optional. You may also report exceptions directly by using a try -
         [[GTExceptionalAPI sharedAPI] reportException:exception wait:NO];
     }
 
+## Analyze Errors
+
+Errors will be reported to your Exceptional account.
+Here is a description how you can analyze them: [Analyze iOS errors - the easy way](http://www.blog.mobile-melting.de/?p=382)
+Let me know, if the blog entry covers all your concerns!
 
 ## Todo's
 
