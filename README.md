@@ -21,6 +21,7 @@ In your Xcode project:
 
 - [ASIHTTPRequest](http://allseeing-i.com/ASIHTTPRequest)
 - [JSON framework](https://github.com/stig/json-framework)
+- [ISO 8601 parser and unparser](http://boredzo.org/iso8601parser)
 
 ## Using the Wrapper in your code
 

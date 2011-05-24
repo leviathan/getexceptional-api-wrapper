@@ -34,12 +34,14 @@
 		1F1EC16D1339FB67007B5A96 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EC15C1339FB67007B5A96 /* SBJsonBase.m */; };
 		1F1EC16E1339FB67007B5A96 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EC15E1339FB67007B5A96 /* SBJsonParser.m */; };
 		1F1EC16F1339FB67007B5A96 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EC1601339FB67007B5A96 /* SBJsonWriter.m */; };
-		1F1EC1701339FB67007B5A96 /* NSDate+StringParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EC1621339FB67007B5A96 /* NSDate+StringParsing.m */; };
 		1F1EC1731339FBA0007B5A96 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1EC1721339FBA0007B5A96 /* Reachability.m */; };
 		1F1EC1751339FC7E007B5A96 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1741339FC7D007B5A96 /* libz.1.2.3.dylib */; };
 		1F1EC1771339FC95007B5A96 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1761339FC95007B5A96 /* SystemConfiguration.framework */; };
 		1F1EC1791339FC9B007B5A96 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC1781339FC9B007B5A96 /* MobileCoreServices.framework */; };
 		1F1EC17C1339FCF7007B5A96 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EC17B1339FCF7007B5A96 /* CFNetwork.framework */; };
+		1F719737138C27310036E71A /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F719734138C27310036E71A /* ISO8601DateFormatter.m */; };
+		1F719738138C27310036E71A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F719735138C27310036E71A /* LICENSE.txt */; };
+		1F719739138C27310036E71A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F719736138C27310036E71A /* README.txt */; };
 		1F972305133A05490009D818 /* exceptional.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F972300133A05490009D818 /* exceptional.plist */; };
 		1F972306133A05490009D818 /* GTExceptionalAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F972302133A05490009D818 /* GTExceptionalAPI.m */; };
 		1F972307133A05490009D818 /* GTExceptionalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F972304133A05490009D818 /* GTExceptionalMessage.m */; };
@@ -106,8 +108,6 @@
 		1F1EC15E1339FB67007B5A96 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		1F1EC15F1339FB67007B5A96 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		1F1EC1601339FB67007B5A96 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		1F1EC1611339FB67007B5A96 /* NSDate+StringParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+StringParsing.h"; sourceTree = "<group>"; };
-		1F1EC1621339FB67007B5A96 /* NSDate+StringParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+StringParsing.m"; sourceTree = "<group>"; };
 		1F1EC1711339FBA0007B5A96 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1F1EC1721339FBA0007B5A96 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1F1EC1741339FC7D007B5A96 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
@@ -115,6 +115,10 @@
 		1F1EC1781339FC9B007B5A96 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1F1EC17A1339FCA3007B5A96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1F1EC17B1339FCF7007B5A96 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1F719733138C27310036E71A /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		1F719734138C27310036E71A /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		1F719735138C27310036E71A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1F719736138C27310036E71A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		1F972300133A05490009D818 /* exceptional.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = exceptional.plist; sourceTree = "<group>"; };
 		1F972301133A05490009D818 /* GTExceptionalAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTExceptionalAPI.h; sourceTree = "<group>"; };
 		1F972302133A05490009D818 /* GTExceptionalAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTExceptionalAPI.m; sourceTree = "<group>"; };
@@ -231,10 +235,9 @@
 		1F1EC13F1339FB67007B5A96 /* external */ = {
 			isa = PBXGroup;
 			children = (
+				1F719732138C27310036E71A /* ISO-8601-parser-0.5 */,
 				1F1EC1401339FB67007B5A96 /* asi-http-request */,
 				1F1EC1551339FB67007B5A96 /* json_framework_2.3 */,
-				1F1EC1611339FB67007B5A96 /* NSDate+StringParsing.h */,
-				1F1EC1621339FB67007B5A96 /* NSDate+StringParsing.m */,
 				1F1EC1711339FBA0007B5A96 /* Reachability.h */,
 				1F1EC1721339FBA0007B5A96 /* Reachability.m */,
 			);
@@ -284,6 +287,17 @@
 				1F1EC1601339FB67007B5A96 /* SBJsonWriter.m */,
 			);
 			path = json_framework_2.3;
+			sourceTree = "<group>";
+		};
+		1F719732138C27310036E71A /* ISO-8601-parser-0.5 */ = {
+			isa = PBXGroup;
+			children = (
+				1F719733138C27310036E71A /* ISO8601DateFormatter.h */,
+				1F719734138C27310036E71A /* ISO8601DateFormatter.m */,
+				1F719735138C27310036E71A /* LICENSE.txt */,
+				1F719736138C27310036E71A /* README.txt */,
+			);
+			path = "ISO-8601-parser-0.5";
 			sourceTree = "<group>";
 		};
 		1F9722FF133A05490009D818 /* GetexceptionalAPI */ = {
@@ -370,6 +384,8 @@
 				1F1EC10E1339FA65007B5A96 /* InfoPlist.strings in Resources */,
 				1F1EC1171339FA65007B5A96 /* MainWindow.xib in Resources */,
 				1F972305133A05490009D818 /* exceptional.plist in Resources */,
+				1F719738138C27310036E71A /* LICENSE.txt in Resources */,
+				1F719739138C27310036E71A /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +436,11 @@
 				1F1EC16D1339FB67007B5A96 /* SBJsonBase.m in Sources */,
 				1F1EC16E1339FB67007B5A96 /* SBJsonParser.m in Sources */,
 				1F1EC16F1339FB67007B5A96 /* SBJsonWriter.m in Sources */,
-				1F1EC1701339FB67007B5A96 /* NSDate+StringParsing.m in Sources */,
 				1F1EC1731339FBA0007B5A96 /* Reachability.m in Sources */,
 				1F972306133A05490009D818 /* GTExceptionalAPI.m in Sources */,
 				1F972307133A05490009D818 /* GTExceptionalMessage.m in Sources */,
 				1F100F09138AB75900E9BD57 /* GTExceptionalDeviceInfo.m in Sources */,
+				1F719737138C27310036E71A /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

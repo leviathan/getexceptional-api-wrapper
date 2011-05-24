@@ -28,8 +28,6 @@
 
 #import "GTExceptionalMessage.h"
 #import "GTExceptionalAPI.h"
-#import "NSDate+StringParsing.h"
-
 
 @implementation GTExceptionalMessage
 
@@ -47,7 +45,11 @@
 	self = [super init];
 	if (self != nil) {
         // additional init stuff here
-        self.occuredAt = [NSDate strFromISO8601:[NSDate date]];
+        ISO8601DateFormatter *isoFormatter = [[ISO8601DateFormatter alloc] init];
+        [isoFormatter setIncludeTime:YES];
+        NSTimeZone *timeZone = [NSTimeZone localTimeZone];
+        self.occuredAt = [isoFormatter stringFromDate:[NSDate date] timeZone:timeZone];
+        [isoFormatter release];
     }
 	return self;
 }
